@@ -15,7 +15,24 @@ A full-stack internal web application for tracking weekly employee activities.
 - npm 9+
 - Docker & Docker Compose
 
-## Setup Instructions
+## Quick Start (Docker — Recommended)
+
+Run the entire application (database + backend + frontend) with a single command:
+
+```bash
+docker-compose up --build
+```
+
+Then open **http://localhost:3000** in your browser.
+
+> Migrations and seed data (Gino Motyka, Todd Allen, Nikhal Bele) are applied automatically on first startup.
+
+To stop: `docker-compose down`  
+To stop and remove data: `docker-compose down -v`
+
+---
+
+## Manual Setup Instructions
 
 ### 1. Start the Database
 
@@ -137,4 +154,3 @@ npm test
 - **description**: What was worked on
 - **roadblocks**: Any blockers or impediments
 - **percentComplete**: Integer from 0 to 100
-Tracks Team Activity Weekly
