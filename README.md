@@ -170,8 +170,11 @@ npm run test:cov
 | File | Tests |
 |------|-------|
 | `activities/activities.service.spec.ts` | Create activity, delete activity, DTO validation (percentComplete range, required title) |
+| `activities/activities.controller.spec.ts` | POST create activity, DELETE remove activity, NotFoundException propagation |
 | `employees/employees.service.spec.ts` | List all employees, find by ID, not-found error |
+| `employees/employees.controller.spec.ts` | GET all employees, GET employee by ID, NotFoundException propagation |
 | `weekly-reports/weekly-reports.service.spec.ts` | List reports for employee, find by ID, find-or-create (new & existing), not-found errors |
+| `weekly-reports/weekly-reports.controller.spec.ts` | GET reports for employee, GET report by ID, POST find-or-create, NotFoundException propagation |
 
 ## Activity Fields
 
