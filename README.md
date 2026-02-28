@@ -143,10 +143,35 @@ The frontend runs on http://localhost:3000
 
 ## Running Tests
 
+The backend has a Jest unit test suite covering all three service layers.
+
 ```bash
 cd backend
-npm test
+npm install       # first time only
+npm test          # run all tests
 ```
+
+To run tests in watch mode (re-runs on file save):
+
+```bash
+cd backend
+npm run test:watch
+```
+
+To generate a coverage report:
+
+```bash
+cd backend
+npm run test:cov
+```
+
+### What is tested
+
+| File | Tests |
+|------|-------|
+| `activities/activities.service.spec.ts` | Create activity, delete activity, DTO validation (percentComplete range, required title) |
+| `employees/employees.service.spec.ts` | List all employees, find by ID, not-found error |
+| `weekly-reports/weekly-reports.service.spec.ts` | List reports for employee, find by ID, find-or-create (new & existing), not-found errors |
 
 ## Activity Fields
 
