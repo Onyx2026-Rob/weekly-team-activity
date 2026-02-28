@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+*/dist/
+build/
+*/build/
+
+# Environment files (but keep .env.example)
+.env
+backend/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+*/coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript incremental compilation
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+*/.vite/
